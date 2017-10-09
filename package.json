@@ -1,0 +1,29 @@
+{
+	"name": "iostrening2",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
+	},
+	"dependencies": {
+		"react": "16.0.0-beta.5",
+		"react-native": "0.49.2",
+		"react-navigation": "^1.0.0-beta.13",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2",
+		"watchman": "^0.1.8"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.0.0-beta.5",
+		"remote-redux-devtools": "^0.5.12",
+		"remotedev-rn-debugger": "^0.8.2"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
